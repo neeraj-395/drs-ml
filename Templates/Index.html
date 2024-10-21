@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recorgnisation Model</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" type="image/x-icon" href="../static/img/medical-robot.ico">
+</head>
+
+<body>
+    <main class="main-card">
+        <div class="main-logo">
+            <img src="../static/img/medical-robot.png" alt="Medical Robot">
+        </div>
+        <div class="main-content">
+            <section class="intro-section">
+                <h1 class="intro-heading">Digit Recorgnisation Model</h1>
+                <article class="intro-paragraphs">
+                    <p>Our digit recognition tool leverages machine learning algorithms like Convolutional Neural Networks (CNNs)
+                        to accurately classify handwritten digits.</p>
+                    <p>The platform is designed for ease of use, allowing users to upload or draw digits and get quick predictions through a Flask-based web interface.</p>
+                    <p>This tool is intended for educational purposes and is not suitable for any official or critical recognition tasks.</p>
+                </article>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/dseu_official" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.x.com/dseu_official" target="_blank" aria-label="X-twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.github.com/neeraj-395/dpm-ml" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </section>
+
+            <div class="input-section">
+                <div class="drawing-area"> 
+                    <!-- Use Jinja2 loop to generate 28x28 grid -->
+                    {% for row in range(28) %}
+                        {% for col in range(28) %}
+                        <div class="pixel" data-index="{{ (row * 28) + col }}" onmouseover="hoverPixel(this)"></div>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill" onclick="clearDrawingArea();">Predict</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+
+</html>
