@@ -1,5 +1,4 @@
 #include "preprocess.hpp"
-
 #include <iostream>
 #include <fstream>
 #include <random>

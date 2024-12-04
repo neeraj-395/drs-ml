@@ -19,7 +19,7 @@ body {
 }
 
 /* Blackboard styling */
-.blackboard {
+.blackboard{
     display: flex;
     align-items: center;
     position: relative;
@@ -29,47 +29,6 @@ body {
     padding: 10px;
     gap: 10px;
 }
-
-/* Prediction result styling */
-#prediction-result {
-    width: 200px;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    border: 2px solid #cf9f46;
-    margin-right: 15px;
-    text-align: left;
-}
-
-#prediction-result h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-#top-predictions {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#top-predictions li {
-    font-size: 14px;
-    padding: 5px;
-    background-color: #e7e7e7;
-    color: #333;
-    border-radius: 4px;
-    margin-bottom: 5px;
-}
-
-/* Canvas styling */
-#result-screen,
-#input-screen {
-    max-width: 450px;
-    height: auto;
-}
-
-/* Predict button styling */
 .predict {
     background-color: #bdaa00;
     color: white;

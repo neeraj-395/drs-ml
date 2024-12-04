@@ -1,6 +1,5 @@
 #pragma once
 #include "layer.hpp"
-
 #include <fstream>
 #include <iostream>
 #include <algorithm>
