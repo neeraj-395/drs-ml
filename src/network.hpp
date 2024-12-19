@@ -1,9 +1,10 @@
 #pragma once
 #include "layer.hpp"
+#include "../libs/nlohmann/json.hpp"
+
 #include <fstream>
 #include <iostream>
 #include <algorithm>
-#include <nlohmann/json.hpp>
 
 typedef std::vector<Layer> Layers;
 using json = nlohmann::json;

@@ -2,8 +2,8 @@
 #include "network.hpp"
 
 int main() {
-    MatrixD inputs = MNIST::load_processed_images("../data/train-images.idx3-ubyte");
-    MatrixD targets = MNIST::load_processed_labels("../data/train-labels.idx1-ubyte");
+    MatrixD inputs = MNIST::load_processed_images("data/train-images.idx3-ubyte");
+    MatrixD targets = MNIST::load_processed_labels("data/train-labels.idx1-ubyte");
 
     DataSplit mnist = MNIST::split_data(inputs, targets);
 
@@ -19,7 +19,7 @@ int main() {
     std::cout << "Validation Accuracy: " << accuracy * 100 << "%" << std::endl;
 
     std::cout << "Saving Neural Network...." << std::endl;
-    net.save_network("../models/network.json");
+    net.save_network("models/network.json");
     std::cout << "The trained model is saved to 'models/network.json'." << std::endl;
 
     return 0;

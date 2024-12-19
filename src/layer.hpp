@@ -1,5 +1,6 @@
 #pragma once
 #include "activation.hpp"
+
 #include <vector>
 #include <random>
 
